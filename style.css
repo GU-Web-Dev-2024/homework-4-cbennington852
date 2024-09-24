@@ -65,10 +65,27 @@ h1,h2,h3,h4,p {
     font-family: 'Brush Script MT', cursive;
 }
 
-body{
 
-    background: black linear-gradient(to right, black, black);
+/*One youtube tutorial laterrrr.....*/
+body {
+    background: linear-gradient(-45deg, black, #030303, #4d4c4c, #7d7c7c);
+    background-size: 500% 300%;
+    animation: gradient 17s ease infinite;
+    height: 100vh;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 header {
     background-color: darkorange;
 }
