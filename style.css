@@ -22,14 +22,16 @@
     position: absolute;
 }
 
+/*Make goat fly*/
 @keyframes ghostfly {
     0%   {scale:105%; left:0px; top:0px;}
     25%  {scale:107%; left:200px; top:60px;}
     50%  {scale:110%; left:200px; top:200px;}
     75%  {scale:107%; left:700px; top:200px;}
-    100% {scale:105%; left:30px; top:40px; visibility: hidden;}
+    100% {scale:105%; left:30px; top:40px; visibility: hidden;} /*Won't disappear after animation :(*/
 }
 
+/*Hover animation*/
 @keyframes hoverAnime {
     0%   {background: linear-gradient(to right, #735100, #4d3601); }
     25%  {background: linear-gradient(to right, #b58002, #735100); }
@@ -59,6 +61,7 @@
     font-size: medium;
 }
 
+/*Apply to all text*/
 h1,h2,h3,h4,p {
     color: white;
     text-align: center;
