@@ -1,6 +1,6 @@
 .candyHolder {
     display: flex;
-    padding : 5px;
+    padding : 10px;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -8,19 +8,47 @@
 .candyHolder div {
     background-color: #1f1f1f;
     padding: 10px;
+    margin: 10px;
     border: 3px orange solid;
     border-radius: 10px;
     box-shadow: 1px 1px grey;
 }
 
+.ghost {
+    font-size: 30px;
+
+    animation-name: ghostfly;
+    animation-duration: 3s;
+    position: absolute;
+}
+
+@keyframes ghostfly {
+    0%   {scale:105%; left:0px; top:0px;}
+    25%  {scale:107%; left:200px; top:60px;}
+    50%  {scale:110%; left:200px; top:200px;}
+    75%  {scale:107%; left:700px; top:200px;}
+    100% {scale:105%; left:30px; top:40px; visibility: hidden;}
+}
+
+@keyframes hoverAnime {
+    0%   {background: linear-gradient(to right, #735100, #4d3601); }
+    25%  {background: linear-gradient(to right, #b58002, #735100); }
+    50%   {background: linear-gradient(to right, #e8a402, #b58002);}
+    100% {background: linear-gradient(to right, #ffb300, #e8a402); }
+}
+
 .candyHolder div:hover {
-    background-color: #1f1f3f;
+    animation-name: hoverAnime;
+    background-color: #e8a402;
+    animation-duration:  0.5s;
     padding: 10px;
     border: 3px orange solid;
     border-radius: 10px;
     box-shadow: 1px 1px grey;
     scale: 102%;
 }
+
+
 .candyHolder div img{
     height: 150px;
     width: 150px;
@@ -34,10 +62,12 @@
 h1,h2,h3,h4,p {
     color: white;
     text-align: center;
+    font-family: 'Brush Script MT', cursive;
 }
 
 body{
-    background-color: black;
+
+    background: black linear-gradient(to right, black, black);
 }
 header {
     background-color: darkorange;
