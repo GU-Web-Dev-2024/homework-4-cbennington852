@@ -1,0 +1,47 @@
+.candyHolder {
+    display: flex;
+    padding : 5px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.candyHolder div {
+    background-color: #1f1f1f;
+    padding: 10px;
+    border: 3px orange solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px grey;
+}
+
+.candyHolder div:hover {
+    background-color: #1f1f3f;
+    padding: 10px;
+    border: 3px orange solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px grey;
+    scale: 102%;
+}
+.candyHolder div img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+.candyHolder div p {
+    text-align: center;
+    font-size: medium;
+}
+
+h1,h2,h3,h4,p {
+    color: white;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+header {
+    background-color: darkorange;
+}
+footer {
+    background-color: dimgray;
+}
