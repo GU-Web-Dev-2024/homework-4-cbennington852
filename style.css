@@ -75,6 +75,7 @@ body {
     background-size: 500% 300%;
     animation: gradient 17s ease infinite;
     height: 100vh;
+    /*Make and infinte gradient, and then move pos of gradient*/
 }
 
 @keyframes gradient {
